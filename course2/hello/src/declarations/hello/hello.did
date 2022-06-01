@@ -1,0 +1,6 @@
+type canister_id = principal;
+type anon_class_5_1 = 
+ service {
+   create_canister: () -> (canister_id);
+ };
+service : () -> anon_class_5_1
