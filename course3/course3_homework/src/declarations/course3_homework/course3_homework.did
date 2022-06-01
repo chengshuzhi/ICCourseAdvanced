@@ -1,0 +1,17 @@
+type anon_class_27_1 = 
+ service {
+   create_canister: () -> (opt principal);
+   make_proposal: (OperationType, principal, opt Wasm_module) -> ();
+   vote_proposal: (nat, bool) -> ();
+ };
+type Wasm_module = vec nat8;
+type OperationType = 
+ variant {
+   addRestricted;
+   delete;
+   install;
+   removeRestricted;
+   start;
+   stop;
+ };
+service : (nat, nat, vec principal) -> anon_class_27_1

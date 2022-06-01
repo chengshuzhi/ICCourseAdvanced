@@ -1,0 +1,35 @@
+{
+  "canisters": {
+    "course3_homework": {
+      "main": "src/course3_homework/main.mo",
+      "type": "motoko"
+    },
+    "course3_homework_assets": {
+      "dependencies": [
+        "course3_homework"
+      ],
+      "frontend": {
+        "entrypoint": "src/course3_homework_assets/src/index.html"
+      },
+      "source": [
+        "src/course3_homework_assets/assets",
+        "dist/course3_homework_assets/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "dfx": "0.8.4",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}
